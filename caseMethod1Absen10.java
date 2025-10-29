@@ -1,11 +1,11 @@
-import java.util.Scanner;
+  import java.util.Scanner;
 
-public class caseMethod1Absen10 {
-public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+  public class caseMethod1Absen10 {
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
 
     String namaMahasiswa;
-    int NIM;
+    long NIM;
     Byte UTSAlgoritma;
     Byte UASAlgoritma;
     Byte tugasAlgoritma;
@@ -24,7 +24,7 @@ public static void main(String[] args) {
     System.out.print("Nama  : ");
     namaMahasiswa = sc.nextLine();
     System.out.print("NIM   : ");
-    NIM = sc.nextInt();
+    NIM = sc.nextLong();
 
     System.out.println("--Mata Kuliah : Algoritma dan Pemrograman--");
       System.out.print("Nilai UTS  : ");
@@ -42,8 +42,8 @@ public static void main(String[] args) {
     System.out.print("Nilai Tugas : ");
     tugasStruktur = sc.nextByte();
 
-    double nilaiAkhirAlgoritma = ((UTSAlgoritma*30)/100)+((UASAlgoritma*40)/100)+((tugasAlgoritma*30)/100);
-    double nilaiAkhirStruktur = ((UTSAtruktur*30)/100)+((UASStruktur*40)/100)+((tugasStruktur*30)/100);
+    double nilaiAkhirAlgoritma = ((double)(UTSAlgoritma*30)/100)+((double)(UASAlgoritma*40)/100)+((double)(tugasAlgoritma*30)/100);
+    double nilaiAkhirStruktur = ((double)(UTSAtruktur*30)/100)+((double)(UASStruktur*40)/100)+((double)(tugasStruktur*30)/100);
 
     if (nilaiAkhirAlgoritma >= 60) {
         statusAlg = "LULUS";
